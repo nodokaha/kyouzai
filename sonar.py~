@@ -1,0 +1,11 @@
+import PySimpleGUI as sg
+sg.theme('DarkAmber')
+layout = [ [sg.Text('ソナーシステムver0.1')],
+           [sg.Button('索敵開始')] ]
+window = sg.Window('高専演習'), layout)
+while True:
+    event, values = window.read()
+    if event == sg.WIN_CLOSED:
+        break
+
+window.close()    
